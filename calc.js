@@ -11,7 +11,7 @@ const numbers = document.querySelectorAll('.num');
 numbers.forEach(number => {
     number.addEventListener('click', () => {
         if (calc !== '') {
-            value += number.value;
+            value = number.value;
             if (value.length > 9) {
                 display.textContent = value.slice(0, 9) + '...';
             }else{
